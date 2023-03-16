@@ -16,3 +16,53 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer_field {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+input[type='text'] {
+  width: 250px;
+  height: 30px;
+  border: 3px solid;
+  border-radius: 5px;
+  border-color: rgb(99, 189, 99);
+}
+input[type='text']:disabled {
+  border-color: #999;
+}
+
+button[type='button'] {
+  border: 3px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-family: 'Sono', sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 500;
+}
