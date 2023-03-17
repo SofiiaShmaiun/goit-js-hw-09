@@ -30,7 +30,7 @@ const options = {
     } else if (selectedDates[0] > new Date()) {
       startTimerButton.disabled = false;
     }
-    let intervalDateId = setInterval(() => {
+    const intervalDateId = setInterval(() => {
       ms = selectedDates[0] - new Date();
       if (ms < 0) {
         clearInterval(intervalDateId);
@@ -43,7 +43,7 @@ const options = {
 function handleStartTimerClick() {
   timerInput.disabled = true;
   startTimerButton.disabled = true;
-  let intervalTimerId = setInterval(() => {
+  const intervalTimerId = setInterval(() => {
     if (ms <= 0) {
       clearInterval(intervalTimerId);
       return;
